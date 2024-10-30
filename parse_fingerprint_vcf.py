@@ -45,7 +45,7 @@ def main():
         elif alt_allele_count > ref_allele_count:
             if ref_allele_count < .1 * alt_allele_count:
                 genotype = alt_allele*2
-            else: genotype = alt_allele + ref_allele
+            else: genotype = ref_allele + alt_allele 
             maf = ref_allele_count / float(ref_allele_count + alt_allele_count)
         elif ref_allele_count == 0: genotype = "--"
         else: genotype = ref_allele + alt_allele
